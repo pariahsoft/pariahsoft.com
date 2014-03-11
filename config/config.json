@@ -6,5 +6,6 @@
     "header": "html/header.html",
     "footer": "html/footer.html",
     "stylesheet": "style.css",
-    "logo": "img/pariahsoft_text.png"
+    "logo": "img/pariahsoft_text.png",
+    "slogan": "We take care of the tricky bits."
 }
