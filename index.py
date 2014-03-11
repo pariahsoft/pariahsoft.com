@@ -29,9 +29,12 @@ import json
 
 
 class PageBuilder:
-    def __init__(self, config, name, page):
+    """This class builds a webpage from JSON configuration files and HTML templates.
+    """
+    def __init__(self, config, page):
+        """PageBuilder initializer.
+        """
         self.config = config
-        self.name = name
         self.page = page
 
         self.formatdict = dict(list(self.config.items()) + list(self.page.items()))
@@ -40,6 +43,8 @@ class PageBuilder:
         self.html = ""
 
     def build(self):
+        """Build and return the webpage contents.
+        """
         # Call the page section builders in order.
         self.__build_header()
         self.__build_content()
@@ -52,6 +57,8 @@ class PageBuilder:
             return self.html
 
     def read(self, filename):
+        """Read the contents of a file on the server.
+        """
         with open(filename, "r") as f:
             content = f.read()
 
@@ -103,18 +110,18 @@ def main():
 
         # A known page was requested. Select this one from the pages file.
         if pagename in pages:
-            target = (pagename, pages[pagename])
+            target = pages[pagename]
 
         # Unknown page name. Select the 404 page.
         else:
-            target = ("404", pages["404"])
+            target = pages["404"]
 
     # No page requested. Select the default page.
     else:
-        target = ("default", pages["default"])
+        target = pages["default"]
 
     # Initialize PageBuilder, build the page, and deliver the resulting HTTP header and HTML.
-    print(PageBuilder(config, *target).build())
+    print(PageBuilder(config, target).build())
 
 # Run the script.
 main()
