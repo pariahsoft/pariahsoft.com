@@ -1,82 +1,19 @@
-body {
-    font-family: arial;
-    
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    background-color: #226688;
-    background-image: url("img/gears_alpha.png"), -webkit-gradient(linear, left top, left bottom, color-stop(0.1, #224667), color-stop(0.85, #226688));
-    background-image: url("img/gears_alpha.png"), -o-linear-gradient(bottom, #224667 10%, #226688 85%);
-    background-image: url("img/gears_alpha.png"), -moz-linear-gradient(bottom, #224667 10%, #226688 85%);
-    background-image: url("img/gears_alpha.png"), -webkit-linear-gradient(bottom, #224667 10%, #226688 85%);
-    background-image: url("img/gears_alpha.png"), -ms-linear-gradient(bottom, #224667 10%, #226688 85%);
-    background-image: url("img/gears_alpha.png"), linear-gradient(to bottom, #224667 10%, #226688 85%);
-    background-repeat: repeat, no-repeat;
-}
-
 a {
-    text-decoration: none;
     color: #338;
+    text-decoration: none;
 }
 
 a:hover {
     text-decoration: underline;
 }
 
-.page {
-    max-width: 1200px;
-    width: 80%;
-    margin: auto;
-}
-
-header {
-    background-color: #f0f0f0;
-    
-    padding: 10px 20px;
-    margin: 15px auto;
-    
-    width: 100%;
-    border-radius: 15px;
-    
-    color: #335;
-    text-align: center;
-    box-shadow: 0px 0px 20px #002;
-}
-
-h1 {
-    font-weight: bold;
-    font-size: 21pt;
-    margin: 10px;
-}
-
-.content {
-    overflow: auto;
-    
-    background: #ccc;
-    
-    border: 1px solid #888;
-    
-    width: 100%;
-    
-    padding: 20px;
-    margin: 20px auto;
-    border-radius: 5px;
-    
-    box-shadow: 0px 0px 20px #000;
-}
-
-h2 {
-    font-size: 20pt;
-}
-
 article {
-    padding: 5px 20px;
-    border-radius: 10px;
     background: #fff;
-    margin: 10px 0;
-    font-size: 11pt;
-    
     border: 1px solid #999;
+    border-radius: 10px;
+    font-size: 11pt;
+    margin: 10px 0;
+    padding: 5px 20px;
 }
 
 article h2 {
@@ -87,10 +24,68 @@ article h2 a {
     color: black;
 }
 
-section.content-text {
-    padding: 15px;
-    margin: auto;
-    width: 60%;
+body {
+    font-family: arial;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #226688;
+    background-image: url("img/gears_alpha.png"), -webkit-gradient(linear, left top, left bottom, color-stop(0.1, #224667), color-stop(0.85, #226688));
+    background-image: url("img/gears_alpha.png"), -o-linear-gradient(bottom, #224667 10%, #226688 85%);
+    background-image: url("img/gears_alpha.png"), -moz-linear-gradient(bottom, #224667 10%, #226688 85%);
+    background-image: url("img/gears_alpha.png"), -webkit-linear-gradient(bottom, #224667 10%, #226688 85%);
+    background-image: url("img/gears_alpha.png"), -ms-linear-gradient(bottom, #224667 10%, #226688 85%);
+    background-image: url("img/gears_alpha.png"), linear-gradient(to bottom, #224667 10%, #226688 85%);
+    background-repeat: repeat, no-repeat;
+}
+
+div.button {
+    background-color: #f0f0f0;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    color: black;
+    padding: 8px;
+}
+
+div.button-hover {
+    background-color: #d0d0d0;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    color: black;
+    padding: 8px;
+}
+
+footer {
+    color: #fff;
+    font-size: 10pt;
+    padding: 5px;
+    padding-left: 50px;
+    text-align: center;
+}
+
+footer a {
+    color: #fff;
+}
+
+h1 {
+    font-size: 21pt;
+    font-weight: bold;
+    margin: 10px;
+}
+
+h2 {
+    font-size: 20pt;
+}
+
+header {
+    background-color: #f0f0f0;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px #002;
+    color: #335;
+    margin: 15px auto;
+    padding: 10px 20px;
+    text-align: center;
+    width: 100%;
 }
 
 hr {
@@ -99,19 +94,41 @@ hr {
     height: 0px;
 }
 
-footer {
-    color: #fff;
-    text-align: center;
-    font-size: 10pt;
-    padding: 5px;
-    padding-left: 50px;
+section.content-text {
+    margin: auto;
+    padding: 15px;
+    width: 60%;
 }
 
-footer a {
-    color: #fff;
+table.menu {
+    margin: auto;
+}
+
+table.menu td {
+}
+
+table.menu a:hover {
+    text-decoration: none;
+}
+
+.content {
+    background: #ccc;
+    border: 1px solid #888;
+    border-radius: 5px;
+    box-shadow: 0px 0px 20px #000;
+    margin: 20px auto;
+    overflow: auto;
+    padding: 20px;
+    width: 100%;
 }
 
 .footlink {
     font-size: 0.8em;
+}
+
+.page {
+    margin: auto;
+    max-width: 1200px;
+    width: 80%;
 }
 
