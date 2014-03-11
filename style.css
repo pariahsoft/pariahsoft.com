@@ -46,8 +46,7 @@ div.block {
     margin: auto;
     padding: 10px;
     text-align: center;
-    min-width: 200px;
-    max-width: 300px;
+    width: 250px;
 }
 
 div.button {
@@ -86,6 +85,11 @@ h1 {
 
 h2 {
     font-size: 20pt;
+}
+
+h3 {
+    font-size: 18pt;
+    margin: 5px;
 }
 
 header {
