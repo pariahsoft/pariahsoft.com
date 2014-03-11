@@ -1,0 +1,26 @@
+{
+    "default": {
+        "subtitle": "About PariahSoft",
+        "content": "html/about.html"
+    },
+
+    "404": {
+        "subtitle": "Error 404 - Page Not Found",
+        "content": "html/error-404.html"
+    },
+
+    "contact": {
+        "subtitle": "Contact Us",
+        "content": "html/contact.html"
+    },
+
+    "projects": {
+        "subtitle": "Our Projects",
+        "content": "html/projects.html"
+    },
+
+    "legal": {
+        "subtitle": "Legal Stuff",
+        "content": "html/legal.html"
+    }
+}
