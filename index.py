@@ -26,7 +26,7 @@
 
 import cgi
 import json
-
+from os import environ
 
 class PageBuilder:
     """This class builds a webpage from JSON configuration files and HTML templates.
@@ -38,7 +38,7 @@ class PageBuilder:
         self.page = page
 
         # We're running local, probably for testing. Don't grab remote files.
-        if __name__ == "__main__":
+        if not "REQUEST_METHOD" in environ:
             self.config["baseurl"] = ""
 
         self.formatdict = dict(list(self.config.items()) + list(self.page.items()))
@@ -55,7 +55,7 @@ class PageBuilder:
         self.__build_footer()
 
         # Return the page content.
-        if not __name__ == "__main__":
+        if "REQUEST_METHOD" in environ:
             return self.httpheader + self.html
         else:
             return self.html
