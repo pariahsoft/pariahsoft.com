@@ -37,6 +37,10 @@ class PageBuilder:
         self.config = config
         self.page = page
 
+        # We're running local, probably for testing. Don't grab remote files.
+        if __name__ == "__main__":
+            self.config["baseurl"] = ""
+
         self.formatdict = dict(list(self.config.items()) + list(self.page.items()))
 
         self.httpheader = "Content-type: text/html; charset=utf-8\n\n"
