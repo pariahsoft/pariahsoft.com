@@ -4,9 +4,19 @@
         "content": "html/about.html"
     },
 
+    "403": {
+        "subtitle": "Error 403 - Forbidden",
+        "content": "html/error.html"
+    },
+
     "404": {
-        "subtitle": "Error 404 - Page Not Found",
-        "content": "html/error-404.html"
+        "subtitle": "Error 404 - File Not Found",
+        "content": "html/error.html"
+    },
+    
+    "500": {
+        "subtitle": "Error 500 - Internal Server Error",
+        "content": "html/error.html"
     },
 
     "contact": {
