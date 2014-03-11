@@ -39,6 +39,17 @@ body {
     background-repeat: repeat, no-repeat;
 }
 
+div.block {
+    background-color: #f0f0f0;
+    border: 1px solid #aaa;
+    border-radius: 10px;
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+    min-width: 200px;
+    max-width: 300px;
+}
+
 div.button {
     background-color: #f0f0f0;
     border: 1px solid #aaa;
