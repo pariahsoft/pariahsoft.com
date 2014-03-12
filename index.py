@@ -94,7 +94,7 @@ class PageBuilder:
 def main():
     """Build and deliver the webpage.
 
-    This function reads the configuration files and client request, selects the page to be delivered, and instructs
+    This function reads the configuration files and user request, selects the page to be delivered, and instructs
     PageBuilder to build and return the page content. The content is then delivered through the resident HTTP server.
     """
     # Read the config file.
@@ -108,7 +108,7 @@ def main():
     # Receive HTTP request fields.
     fields = cgi.FieldStorage()
 
-    # Did the client request a page?
+    # Did the user request a page?
     if "page" in fields:
         pagename = fields["page"].value.lower()
 
@@ -125,7 +125,7 @@ def main():
         target = pages["default"]
 
     # Initialize PageBuilder, build the page, and deliver the resulting HTTP header and HTML.
-    print(PageBuilder(config, target).build().rstrip())
+    print(PageBuilder(config, pages["projects"]).build().rstrip())
 
 # Run the script.
 main()
