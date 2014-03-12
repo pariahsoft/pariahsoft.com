@@ -125,7 +125,7 @@ def main():
         target = pages["default"]
 
     # Initialize PageBuilder, build the page, and deliver the resulting HTTP header and HTML.
-    print(PageBuilder(config, pages["projects"]).build().rstrip())
+    print(PageBuilder(config, target).build().rstrip())
 
 # Run the script.
 main()
