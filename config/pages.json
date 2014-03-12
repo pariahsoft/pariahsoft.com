@@ -13,7 +13,7 @@
         "subtitle": "Error 404 - File Not Found",
         "content": "html/error.html"
     },
-    
+
     "500": {
         "subtitle": "Error 500 - Internal Server Error",
         "content": "html/error.html"
@@ -24,13 +24,23 @@
         "content": "html/contact.html"
     },
 
+    "legal": {
+        "subtitle": "Legal Stuff",
+        "content": "html/legal.html"
+    },
+
     "projects": {
         "subtitle": "Our Projects",
         "content": "html/projects.html"
     },
 
-    "legal": {
-        "subtitle": "Legal Stuff",
-        "content": "html/legal.html"
+    "project-driftwood": {
+        "subtitle": "Driftwood 2D",
+        "content": "html/project-driftwood.html"
+    },
+
+    "project-pyww": {
+        "subtitle": "PyWW",
+        "content": "html/project-pyww.html"
     }
 }
