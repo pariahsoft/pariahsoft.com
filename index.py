@@ -27,7 +27,8 @@
 import cgi
 import json
 from os import environ
-import sys
+from sys import argv
+
 
 class PageBuilder:
     """This class builds a webpage from JSON configuration files and HTML templates.
@@ -111,8 +112,8 @@ def main():
 
     # We're running local, probably for testing. See if a page was requested from the command line.
     if not "REQUEST_METHOD" in environ:
-        if len(sys.argv) > 1:
-            target = pages[sys.argv[1]]
+        if len(argv) > 1:
+            target = pages[argv[1]]
         else:
             target = pages["default"]
 
