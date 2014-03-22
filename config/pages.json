@@ -19,6 +19,11 @@
         "content": "html/error.html"
     },
 
+    "consulting": {
+        "subtitle": "Consulting",
+        "content": "html/consulting.html"
+    },
+
     "contact": {
         "subtitle": "Contact Us",
         "content": "html/contact.html"

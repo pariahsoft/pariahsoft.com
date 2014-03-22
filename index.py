@@ -27,6 +27,7 @@
 import cgi
 import json
 from os import environ
+import sys
 
 class PageBuilder:
     """This class builds a webpage from JSON configuration files and HTML templates.
@@ -108,8 +109,15 @@ def main():
     # Receive HTTP request fields.
     fields = cgi.FieldStorage()
 
+    # We're running local, probably for testing. See if a page was requested from the command line.
+    if not "REQUEST_METHOD" in environ:
+        if len(sys.argv) > 1:
+            target = pages[sys.argv[1]]
+        else:
+            target = pages["default"]
+
     # Did the user request a page?
-    if "page" in fields:
+    elif "page" in fields:
         pagename = fields["page"].value.lower()
 
         # A known page was requested. Select this one from the pages file.
