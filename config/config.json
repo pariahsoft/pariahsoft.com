@@ -2,7 +2,7 @@
     "title": "PariahSoft LLC",
     "description": "PariahSoft LLC is a small independent software company with the goal of developing useful open source software for indie video game developers.",
     "keywords": "pariahsoft, omegasdg, omega software development group, software development, game development, video games, open source, freeware, company, indie, tile engine",
-    "baseurl": "http://pariahsoft.com/",
+    "baseurl": "//pariahsoft.com/",
     "header": "html/header.html",
     "footer": "html/footer.html",
     "stylesheet": "style.css",
